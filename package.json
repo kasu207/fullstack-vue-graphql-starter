@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
-    "client": "cd client && npm start",
+    "client": "cd client && npm run serve",
     "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
   },
   "keywords": [],
@@ -13,14 +13,16 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.0.0-rc.7",
-    "bcrypt": "^3.0.0",
+    "bcrypt": "^5.0.0",
     "dotenv": "^6.0.0",
     "graphql": "^0.13.2",
     "jsonwebtoken": "^8.3.0",
+    "material-design-icons-iconfont": "^6.1.0",
     "md5": "^2.2.1",
     "mongoose": "^5.2.6"
   },
   "devDependencies": {
+    "@mdi/font": "^5.8.55",
     "concurrently": "^3.6.0",
     "nodemon": "^1.18.1"
   }
